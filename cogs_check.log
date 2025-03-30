@@ -1,0 +1,11 @@
+2025-03-30 17:48:30,102 - cogs_check - INFO - Starting cogs check...
+2025-03-30 17:48:30,104 - cogs_check - INFO - Cogs directory found: C:\Users\User\Desktop\Shop Bot 2.0\cogs
+2025-03-30 17:48:30,106 - cogs_check - INFO - Found 2 cog files: ['admin_commands.py', 'user_commands.py']
+2025-03-30 17:48:30,112 - cogs_check - INFO - Checking cog: admin_commands at C:\Users\User\Desktop\Shop Bot 2.0\cogs\admin_commands.py
+2025-03-30 17:48:32,331 - cogs_check - INFO - Potential cog class found: AdminCommands
+2025-03-30 17:48:32,332 - cogs_check - INFO - Potential cog class found: datetime
+2025-03-30 17:48:32,332 - cogs_check - INFO - Potential cog class found: timedelta
+2025-03-30 17:48:32,341 - cogs_check - INFO - Checking cog: user_commands at C:\Users\User\Desktop\Shop Bot 2.0\cogs\user_commands.py
+2025-03-30 17:48:32,414 - cogs_check - INFO - Potential cog class found: UserCommands
+2025-03-30 17:48:32,415 - cogs_check - INFO - Potential cog class found: datetime
+2025-03-30 17:48:32,416 - cogs_check - INFO - Cogs check completed

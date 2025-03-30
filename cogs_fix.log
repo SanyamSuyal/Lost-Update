@@ -1,0 +1,41 @@
+2025-03-30 17:50:04,531 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:50:04,548 - cogs_fix - INFO - Found cogs directory: C:\Users\User\Desktop\Shop Bot 2.0\cogs
+2025-03-30 17:50:04,620 - cogs_fix - INFO - Successfully loaded cog: admin_commands
+2025-03-30 17:50:04,679 - cogs_fix - INFO - Successfully loaded cog: user_commands
+2025-03-30 17:50:04,680 - cogs_fix - INFO - Cog loading complete. Success: 2, Failed: 0
+2025-03-30 17:50:04,681 - discord.client - INFO - logging in using static token
+2025-03-30 17:50:05,421 - cogs_fix - ERROR - Error in main: Improper token has been passed.
+2025-03-30 17:50:05,436 - cogs_fix - ERROR - Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\http.py", line 803, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\Shop Bot 2.0\fix_cogs.py", line 112, in main
+    await bot.start(TOKEN)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\client.py", line 777, in start
+    await self.login(token)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\client.py", line 612, in login
+    data = await self.http.static_login(token)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\http.py", line 807, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+
+2025-03-30 17:50:05,543 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x0000023AE31AA620>, 1318634.546)])']
+connector: <aiohttp.connector.TCPConnector object at 0x0000023AE319E8C0>
+2025-03-30 17:50:05,547 - asyncio - ERROR - Fatal error on SSL transport
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000023AE28BD810>
+transport: <_ProactorSocketTransport fd=940 read=<_OverlappedFuture cancelled>>
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\asyncio\sslproto.py", line 690, in _process_write_backlog
+    self._transport.write(chunk)
+  File "C:\Program Files\Python310\lib\asyncio\proactor_events.py", line 365, in write
+    self._loop_writing(data=bytes(data))
+  File "C:\Program Files\Python310\lib\asyncio\proactor_events.py", line 401, in _loop_writing
+    self._write_fut = self._loop._proactor.send(self._sock, data)
+AttributeError: 'NoneType' object has no attribute 'send'
